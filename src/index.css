@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-aluna-alabaster: #F9F8F6;
+  --color-aluna-cream: #F2EFE9;
+  --color-aluna-gold: #D4C5A9;
+  --color-aluna-charcoal: #2A2A2A;
+  --color-aluna-stone: #6B665E;
+  --color-aluna-earth: #8C7E6A;
+
+  /* Typography */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-accent: "Montserrat", sans-serif;
+
+  /* Animations */
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* High Contrast Buttons */
+  .btn-primary {
+    @apply px-8 py-3 bg-aluna-charcoal text-white rounded-full hover:bg-aluna-gold hover:text-white transition-all uppercase tracking-widest text-xs shadow-md hover:shadow-lg inline-block;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 border border-aluna-charcoal text-aluna-charcoal hover:bg-aluna-charcoal hover:text-white transition-all uppercase tracking-widest text-xs rounded-full inline-block;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  @apply bg-aluna-alabaster text-aluna-charcoal antialiased;
+}
+
+body {
+  @apply font-sans;
+}
+
+::selection {
+  @apply bg-aluna-gold/30 text-aluna-charcoal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif;
+}
+
+/* Custom Scrollbar for Webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-aluna-alabaster;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-aluna-gold/50 rounded-full hover:bg-aluna-gold;
+}
