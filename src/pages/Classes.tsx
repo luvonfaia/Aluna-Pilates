@@ -41,7 +41,7 @@ export default function Classes() {
 
     return (
         <PageTransition>
-            <div className="pt-20">
+            <div>
                 <section className="bg-aluna-alabaster py-20 text-center">
                     <div className="max-w-4xl mx-auto px-6">
                         <motion.h1

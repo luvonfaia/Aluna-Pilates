@@ -7,7 +7,7 @@ export default function About() {
 
     return (
         <PageTransition>
-            <div className="pt-20">
+            <div>
                 {/* Hero */}
                 <section className="relative py-20 bg-aluna-alabaster">
                     <div className="max-w-7xl mx-auto px-6 lg:px-12">

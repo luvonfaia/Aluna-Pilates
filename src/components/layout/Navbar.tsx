@@ -46,7 +46,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full z-[100]">
+            <nav className="sticky top-0 left-0 w-full z-[100]">
                 {/* Top Info Bar */}
                 <div className="bg-aluna-alabaster/40 backdrop-blur-sm border-b border-aluna-stone/10 py-2 sm:py-2.5 px-6">
                     <div className="max-w-7xl mx-auto flex justify-center items-center space-x-8 sm:space-x-12 text-[13px] sm:text-sm tracking-[0.2em] font-medium text-aluna-stone/80">
