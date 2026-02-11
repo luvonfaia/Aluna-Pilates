@@ -15,7 +15,7 @@ export default function Footer() {
                             <img
                                 src="/logo.jpeg"
                                 alt="ALUNA Reformer Studio"
-                                className="h-64 w-auto object-contain"
+                                className="h-32 md:h-64 w-auto object-contain"
                             />
                         </Link>
                         <p className="text-aluna-stone font-light text-sm leading-relaxed mb-6">

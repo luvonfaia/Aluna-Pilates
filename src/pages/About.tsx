@@ -17,7 +17,9 @@ export default function About() {
                             transition={{ duration: 0.8 }}
                             className="max-w-3xl"
                         >
-                            <h1 className="text-5xl md:text-7xl font-serif text-aluna-charcoal mb-8" dangerouslySetInnerHTML={{ __html: t('about.hero.title').replace(' ', '&nbsp;') }} />
+                            <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-aluna-charcoal mb-8">
+                                {t('about.hero.title')}
+                            </h1>
                             <p className="text-xl md:text-2xl text-aluna-stone font-light leading-relaxed">
                                 {t('about.hero.desc')}
                             </p>

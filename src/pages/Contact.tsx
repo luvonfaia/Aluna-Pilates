@@ -22,7 +22,7 @@ export default function Contact() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1 className="text-5xl font-serif text-aluna-charcoal mb-4">{t('contact.title')}</h1>
+                        <h1 className="text-4xl sm:text-5xl font-serif text-aluna-charcoal mb-4">{t('contact.title')}</h1>
                         <p className="text-aluna-stone font-light">{t('contact.subtitle')}</p>
                     </motion.div>
                 </section>
