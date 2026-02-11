@@ -11,7 +11,7 @@ export default function LanguageSwitcher() {
         <div className="flex items-center space-x-2 text-xs uppercase tracking-widest font-medium">
             <button
                 onClick={() => changeLanguage('ro')}
-                className={`transition-colors duration-300 ${i18n.language === 'ro' ? 'text-aluna-gold' : 'text-aluna-stone hover:text-aluna-charcoal'
+                className={`cursor-pointer transition-colors duration-300 ${i18n.language === 'ro' ? 'text-aluna-gold' : 'text-aluna-stone hover:text-aluna-charcoal'
                     }`}
             >
                 RO
@@ -19,7 +19,7 @@ export default function LanguageSwitcher() {
             <span className="text-aluna-stone/50">|</span>
             <button
                 onClick={() => changeLanguage('en')}
-                className={`transition-colors duration-300 ${i18n.language === 'en' ? 'text-aluna-gold' : 'text-aluna-stone hover:text-aluna-charcoal'
+                className={`cursor-pointer transition-colors duration-300 ${i18n.language === 'en' ? 'text-aluna-gold' : 'text-aluna-stone hover:text-aluna-charcoal'
                     }`}
             >
                 EN
