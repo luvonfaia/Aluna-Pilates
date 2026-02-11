@@ -16,7 +16,7 @@ export default function Contact() {
     return (
         <PageTransition>
             <div>
-                <section className="bg-aluna-alabaster py-20 text-center">
+                <section className="bg-aluna-alabaster py-[60px] text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}

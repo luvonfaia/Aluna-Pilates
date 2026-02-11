@@ -17,7 +17,7 @@ export default function Gallery() {
     return (
         <PageTransition>
             <div>
-                <section className="py-20 bg-aluna-alabaster text-center">
+                <section className="py-[60px] bg-aluna-alabaster text-center">
                     <h1 className="text-5xl font-serif text-aluna-charcoal mb-4">{t('gallery.title')}</h1>
                     <p className="text-aluna-stone font-light">{t('gallery.subtitle')}</p>
                 </section>
